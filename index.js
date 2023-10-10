@@ -63,6 +63,8 @@ const resolvers = {
 
         return game;
       });
+
+      return db.games.find((game) => game.id === args.id);
     },
   },
 };
